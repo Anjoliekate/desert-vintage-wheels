@@ -4706,3 +4706,88 @@ td:last-child {
 .contact-list li {
   padding-left: 0;
 }
+<<<<<<< HEAD:css/styles.css
+=======
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.card {
+  width: 600px;
+  height: 600px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 0 0 16px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.listing-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.left-button,
+.right-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.left-button {
+  left: 10px;
+}
+
+.right-button {
+  right: 10px;
+}
+
+.description {
+  margin-top: 16px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+>>>>>>> 7360a5f (use env variables):public/css/styles.css
