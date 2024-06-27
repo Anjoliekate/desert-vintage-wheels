@@ -3349,9 +3349,9 @@ td:last-child {
  * responsive:
  * site-header
  * ------------------------------------------------------------------- */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1300px) {
   .s-header {
-    --logo-width: 15rem;
+    --logo-width: 20rem;
     top: var(--vspace-0_25);
   }
 
@@ -3363,6 +3363,7 @@ td:last-child {
 
   .s-header__block {
     width: 100%;
+    padding-top: 125px;
     height: var(--header-height);
     box-shadow: var(--box-shadow);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -3370,9 +3371,13 @@ td:last-child {
 
   .s-header__logo {
     position: absolute;
-    left: calc(var(--gutter) * 2 + 1.5%);
+    left: 50%;
     top: 50%;
-    transform: translate(0, -50%);
+    transform: translate(-50%, -50%);
+    padding-top: 30px;
+  }
+  .s-header__logo img {
+    height: 50%;
   }
 
   .s-header__nav {
@@ -3451,10 +3456,6 @@ td:last-child {
 }
 
 @media screen and (max-width: 600px) {
-  .s-header__logo {
-    left: calc(var(--gutter) * 2 + 1vw);
-  }
-
   .s-header__nav a:not(.btn) {
     font-size: var(--text-size);
     padding: var(--vspace-0_5) 0;
@@ -3465,7 +3466,7 @@ td:last-child {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .s-header__nav {
     padding-right: 7vw;
     padding-left: 7vw;
@@ -4706,8 +4707,6 @@ td:last-child {
 .contact-list li {
   padding-left: 0;
 }
-<<<<<<< HEAD:css/styles.css
-=======
 
 .gallery {
   display: flex;
@@ -4790,4 +4789,3 @@ td:last-child {
   height: auto;
   display: block;
 }
->>>>>>> 7360a5f (use env variables):public/css/styles.css

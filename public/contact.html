@@ -5,7 +5,7 @@
     ================================================== -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Our Cars - Desert Vintage Wheels</title>
+    <title>Contact - Desert Vintage Wheels</title>
 
     <script>
       document.documentElement.classList.remove("no-js");
@@ -71,7 +71,7 @@
             <ul class="s-header__menu-links">
               <li><a href="index.html">About</a></li>
               <li><a href="gallery.html ">Gallery</a></li>
-              <li><a href="blog.html">Our Cars</a></li>
+              <li><a href="cars.html">Our Cars</a></li>
               <li><a href="contact.html">Contact Us</a></li>
               <li>
                 <a href="https://instagram.com/desertvintagewheels">
@@ -132,46 +132,50 @@
           <div class="column xl-6 md-12">
             <h3 class="u-add-bottom">Contact Form</h3>
 
-            <form>
+            <form id="contactForm">
               <div>
-                <label for="sampleInput">Your name</label>
+                <label for="name">Your name</label>
                 <input
                   class="u-fullwidth"
                   type="text"
                   placeholder="name"
-                  id="sampleInput"
+                  id="name"
+                  name="name"
+                  required
                 />
               </div>
               <div>
-                <label for="sampleInput">Your email</label>
+                <label for="email">Your email</label>
                 <input
                   class="u-fullwidth"
                   type="email"
                   placeholder="test@mailbox.com"
-                  id="sampleInput"
+                  id="email"
+                  name="email"
+                  required
                 />
               </div>
               <div>
-                <label for="sampleInput">Your phone</label>
+                <label for="phone">Your phone</label>
                 <input
                   class="u-fullwidth"
                   type="tel"
                   placeholder="123-456-7890"
-                  id="sampleInput"
+                  id="phone"
+                  name="phone"
+                  required
                 />
               </div>
-
-              <label for="exampleMessage">Message</label>
-              <textarea
-                class="u-fullwidth"
-                placeholder="Your message"
-                id="exampleMessage"
-              ></textarea>
-
-              <label class="u-add-bottom">
-                <input type="checkbox" />
-                <span class="label-text">Send a copy to yourself</span>
-              </label>
+              <div>
+                <label for="message">Message</label>
+                <textarea
+                  class="u-fullwidth"
+                  placeholder="Your message"
+                  id="message"
+                  name="message"
+                  required
+                ></textarea>
+              </div>
 
               <input
                 class="btn--primary u-fullwidth"
@@ -268,7 +272,7 @@
             <div class="contact-block">
               <h6>Phone</h6>
               <ul class="contact-list">
-                <li><a href="tel:435-817-2512">435 817 2512</a></li>
+                <li><a href="tel:435-817-2512">435 319 5360</a></li>
               </ul>
             </div>
             <iframe
@@ -336,7 +340,7 @@
             <ul class="link-list">
               <li><a href="index.html">Home</a></li>
               <li><a href="gallery.html ">Gallery</a></li>
-              <li><a href="blog.html">Our Cars</a></li>
+              <li><a href="cars.html">Our Cars</a></li>
               <li><a href="contact.html">Contact Us</a></li>
             </ul>
           </div>
